@@ -44,7 +44,7 @@ async def _(event):
     except Exception as e:
         dc_id = "`Need a Profile Picture to check **this**`"
         location = str(e)
-    caption = """<b>Extracted Userdata From Telegram DATABASE By Friday<b>
+    caption = """<b>Extracted Userdata From Telegram DATABASE <b>
 <b>🔥Telegram ID</b>: <code>{}</code>
 <b>🤟Permanent Link</b>: <a href='tg://user?id={}'>Click Here</a>
 <b>🗣️First Name</b>: <code>{}</code>
@@ -137,3 +137,6 @@ async def get_full_user(event):
                 return replied_user, None
             except Exception as e:
                 return None, e
+
+
+        
